@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+}
+.tic_tac_toe {
+  height: 555px;
+  width: 100%;
+  background-image: url("..//content/1.jpg.jfif");
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  .field_of_play {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(0, 102, 255);
+    background-color: aliceblue;
+  }
+}
+.text {
+  justify-content: center;
+  margin: auto;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  background: transparent;
+  color: rgb(0, 102, 255);
+  font-size: 51px;
+}
+
+.text:hover {
+  transform: rotateZ(30deg);
+  color: rgb(68, 0, 255);
+}
+.new {
+  width: 0px;
+}
+@media screen and (min-width: 768px) {
+  .tic_tac_toe {
+    height: 800px;
+    width: 100%;
+
+    .field_of_play {
+      height: 500px;
+      width: 500px;
+    }
+  }
+  .text {
+    font-size: 81px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tic_tac_toe {
+    height: 1300px;
+    .field_of_play {
+      height: 800px;
+      width: 800px;
+    }
+  }
+  .text {
+    font-size: 151px;
+  }
+}
